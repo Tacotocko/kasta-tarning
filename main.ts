@@ -1,10 +1,10 @@
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "SpelVal1") {
-        number = 4
+        number = 7
     }
 })
 input.onGesture(Gesture.Shake, function () {
-    if (number == 4) {
+    if (number == 7) {
         number = randint(1, 6)
         basic.showNumber(number)
         radio.sendValue("Bit 1", number)
